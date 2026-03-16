@@ -1,6 +1,6 @@
 body {
     margin: 0;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;color: #333;
+    background-color:rgb(243, 240, 240);color: #333;
 }
 .menu{
     background-color: #1e3c72;padding: 15px 0;
@@ -26,4 +26,89 @@ body {
     font-size: 1.2rem;/*1.2 *16px*/
     text-transform: uppercase;/*letra maiuscula*/
 }
+.lista {
+    list-style: none; display: flex; gap: 20px;/*espaço entre as palavras*/
+    margin: 0; padding: 0;
+
+}
+.lista a{
+     color: #cbbcf7; text-decoration: none; font-size: 0.9rem;
+     font-weight: 500; transition: color 0.3s; 
+
+}
+.lista a:hover{
+    color: #ffff;
+
+}
+.cabecalho{
+    background-color: #2e4c82; color:white;padding: 60px 20px;
+    text-align: center;
+}
+.cabecalho h1{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+
+}
+.cabecalho h2{
+    font-weight: 300;
+    font-style: italic;
+    color: #ffd700;
+}
+.principal{
+    max-width: 900px; margin: -40px auto 40px; padding: 20px;display: flex;
+    gap: 25px;flex-direction: column;
+}
+
+.missão-valores{
+    border-radius: 20px; background-color: white; ;margin:0;
+    padding: 20px 20px;width: 40px 40px;
+}
+.nosso-objetivo{
+      border-radius: 20px; background-color: white; ;margin:0;
+    padding: 20px 20px;width: 40px 40px;
+}
+.datas{
+ border-radius: 20px; background-color: white; ;margin: 0;
+    padding: 20px 20px;width: 40px 40px;display: flex;
+    flex-direction: row; gap: 20px;align-items: stretch;
+}
+.data1{
+    background-color: rgb(217, 235, 250);border-radius: 10px;padding: 10px 30px ;
+    border-left: 4px solid #1a3a6b;font-size: 1rem;flex: 1;
+    
+}
+.data2{
+     background-color: rgb(217, 235, 250);border-radius: 10px;padding: 10px 30px ;
+    border-left: 4px solid #1a3a6b;font-size: 1rem;flex: 1;
+}
+.horas{
+border-radius: 20px; background-color: white; ;margin:0;
+    padding: 20px 20px;width: 40px 40px;
+}
+.VERDE{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+.v1{
+    background-color: rgb(233, 248, 233);border-radius: 5px;  color: #60cd81;
+    font-weight: bold;
+    padding: 4px 10px;
+   font-size: 0.85rem; 
+}
+.v2{
+  background-color: rgb(233, 248, 233);border-radius: 5px;color: #60cd81;
+    font-weight: bold;
+    padding: 4px 10px; 
+    font-size: 0.85rem; 
+}
+.v3{
+    background-color: rgb(233, 248, 233);border-radius: 5px;color: #60cd81;
+    font-weight: bold;
+    padding: 4px 10px;
+    font-size: 0.85rem; 
+}
+
+
 
