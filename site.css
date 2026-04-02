@@ -56,59 +56,239 @@ body {
 }
 .principal{
     max-width: 900px; margin: -40px auto 40px; padding: 20px;display: flex;
-    gap: 25px;flex-direction: column;
+    gap: 20px; flex-direction: column; 
 }
 
-.missão-valores{
-    border-radius: 20px; background-color: white; ;margin:0;
-    padding: 20px 20px;width: 40px 40px;
+section{
+    background: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
 }
-.nosso-objetivo{
-      border-radius: 20px; background-color: white; ;margin:0;
-    padding: 20px 20px;width: 40px 40px;
-}
+
 .datas{
- border-radius: 20px; background-color: white; ;margin: 0;
-    padding: 20px 20px;width: 40px 40px;display: flex;
-    flex-direction: row; gap: 20px;align-items: stretch;
+ 
+    display: flex;
+    gap: 20px;
 }
 .data1{
-    background-color: rgb(217, 235, 250);border-radius: 10px;padding: 10px 30px ;
-    border-left: 4px solid #1a3a6b;font-size: 1rem;flex: 1;
+   flex: 1; background: #eef5ff; padding: 15px; border-left: 5px solid #2a5298;
+    border-radius: 8px;
     
 }
 .data2{
-     background-color: rgb(217, 235, 250);border-radius: 10px;padding: 10px 30px ;
-    border-left: 4px solid #1a3a6b;font-size: 1rem;flex: 1;
+    flex: 1; background: #eef5ff; padding: 15px; border-left: 5px solid #2a5298;
+    border-radius: 8px;
 }
-.horas{
-border-radius: 20px; background-color: white; ;margin:0;
-    padding: 20px 20px;width: 40px 40px;
+.horas ul {
+list-style: none;
+    padding: 0;
 }
-.VERDE{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+.horas li{
+     background: #e9f7ef; margin: 8px 0; padding: 10px;
+    border-radius: 5px; color: #27ae60; font-weight: bold;
+}
+.texto-introducao p{
+    line-height: 1.6;/*melhora leitura de textos longos*/
+    margin-bottom: 20px;
+    text-align: justify;/*alinhamento justificado esquerda e direita*/
 
 }
-.v1{
-    background-color: rgb(233, 248, 233);border-radius: 5px;  color: #60cd81;
-    font-weight: bold;
-    padding: 4px 10px;
-   font-size: 0.85rem; 
+.lista-valores{
+    
+    list-style: none;
+    padding: 0;
 }
-.v2{
-  background-color: rgb(233, 248, 233);border-radius: 5px;color: #60cd81;
-    font-weight: bold;
-    padding: 4px 10px; 
-    font-size: 0.85rem; 
+.lista-valores li{
+    background: #eef5ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #1e3c72;
 }
-.v3{
-    background-color: rgb(233, 248, 233);border-radius: 5px;color: #60cd81;
-    font-weight: bold;
-    padding: 4px 10px;
-    font-size: 0.85rem; 
+table{
+    width: 100%;border-collapse: collapse;margin-top: 20px;
+    background-color: white;
 }
+th,td{
+    padding: 15px;
+    text-align: left;border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #2a5298;
+}
+tr:hover{
+    background-color: whitesmoke;
+}
+.box-amarela{
+    width: 20px;height: 25px;
+    border-radius: 4px;
+    background: yellow;
+}
+.kit{
+    background-color: rgb(249, 249, 216);
+    padding: 20px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: goldenrod;
+}
+.kit ul{
+    list-style: none;
+padding: 0;
+}
+.kit li{
+    font-size: 1.1rem;
+    
+    margin: 10px;
+}
+.titu{
+    color: white;
+}
+.leve{
+    border-left:4px solid rgb(247, 95, 95);
+    background-color: rgb(243, 226, 224);
+}
+.pp{
+    color: rgb(173, 149, 8);
+}
+.corzin{
+    background-color: rgb(253, 247, 232);
+    border-left: 4px solid yellow;
+}
+footer{
+    background-color: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-size: 0.85rem;
+    border-top: 4px solid #ffd700;
+}
+.evento{
+    margin-bottom: 25px;
+    position: relative;
+    
+}
+.evento::before{ /*elemento fantasma*/
+content: '';
+width: 12px;
+height: 12px;
+background: red;
+border-radius: 50%;
+position: absolute;
+left: -28px;
+top: 5px;
+}
+.timeline{
+    border-left: 3px solid #1e3c72;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.grid-locais {
+    display: flex;
+    gap: 20px;
+
+}
+.unidade{
+    flex: 1;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+
+}
+.unidade h4{
+    color: #2a5298;
+    margin-top: 0;
+}
+.etapas{
+    display: flex;
+    gap: 20px;
+}
+.tapa{
+    background-color: rgb(213, 235, 242);
+    border-radius: 10px;padding: 25px; border-left: 5px solid #1e3c72;
+    flex: 1;
+}
+.branc{
+    color: white;
+}
+.yello td{
+    border: none;
+}
+.yello td strong{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(187, 155, 76);
+    
+}
+.yello{
+    border-bottom: 1px solid #ccc;
+}
+.form{
+      background-color: rgb(253, 247, 232);
+    border-left: 4px solid yellow;
+}
+.sep{
+    list-style: none;
+    padding: 0;
+}
+.sep li{
+     background: #eef5ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #1e3c72;
+}
+.lol{
+    list-style: none;
+    padding: 0;
+}
+.lol li{
+    color: rgb(142, 110, 31);
+}
+.CRAP{
+    color: white;
+}
+.form-goup{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+button{
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.resutado-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 5px solid #1e3c72;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+   
+
+
+
+
 
 
 
